@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.outerPart{
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f172a;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.CalcSection{
+  width: 320px;
+
+  padding: 22px;
+
+  border-radius: 24px;
+
+  background: #111827;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.45);
+
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.heading{
+  margin-bottom: 18px;
+}
+
+.heading h2{
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.inputField{
+  margin-bottom: 22px;
+}
+
+.inputField input{
+  width: 100%;
+  height: 75px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 16px;
+
+  padding: 18px;
+
+  background: #1e293b;
+
+  color: white;
+
+  font-size: 34px;
+  font-weight: 500;
+
+  text-align: right;
+}
+
+.inputField input::placeholder{
+  color: #94a3b8;
+}
+
+.allButtons{
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+.button{
+  height: 60px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #1e293b;
+
+  color: white;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.button:hover{
+  background: #334155;
+
+  transform: translateY(-2px);
+}
+
+.button:active{
+  transform: scale(0.96);
+}
+
+.operator{
+  background: #2563eb;
+}
+
+.operator:hover{
+  background: #1d4ed8;
+}
+
+.equalBtn{
+  background: #10b981;
+}
+
+.equalBtn:hover{
+  background: #059669;
+}
